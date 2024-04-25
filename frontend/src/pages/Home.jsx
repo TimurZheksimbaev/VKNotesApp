@@ -59,9 +59,9 @@ function Home() {
             .catch((error) => alert(error));
     };
 
-    // const logout = () => {
+    // function logout() {
     //     localStorage.clear();
-    //     navigate("/logout")
+    //     navigate("/logout");
     // }
 
     return (
