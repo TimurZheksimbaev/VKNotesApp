@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import "../styles/Form.css"
 import LoadingIndicator from "./LoadingIndicator";
+// import {Register} from "../pages/Register"
 
 
 function Form({ route, method }) {
@@ -23,7 +24,7 @@ function Form({ route, method }) {
             if (method === "login") {
                 localStorage.setItem(ACCESS_TOKEN, res.data.access);
                 localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
-                navigate("/")
+                navigate("/home")
             } else {
                 navigate("/login")
             }
@@ -33,6 +34,7 @@ function Form({ route, method }) {
             setLoading(false)
         }
     };
+
 
     return (
         <form onSubmit={handleSubmit} className="form-container">

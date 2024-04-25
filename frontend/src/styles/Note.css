@@ -27,7 +27,22 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   .delete-button:hover {
     background-color: #d32f2f; /* Darker red */
+  }
+
+  .update-button {
+    background-color: #B8860B; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+
+  .update-button:hover {
+    background-color: #D2691E;
   }
