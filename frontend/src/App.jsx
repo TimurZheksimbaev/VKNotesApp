@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
 import Welcome from "./pages/Welcome"
+import { useState, useEffect } from "react"
 
 function Logout() {
   localStorage.clear()
@@ -18,17 +19,18 @@ function RegisterAndLogout() {
 }
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path="/"
           element={
-            <Welcome />
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
           }
         />
-        <Route path="/home" element={<Home />} />
-        <Route path="/protectedroute" element={<ProtectedRoute />}/>
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<RegisterAndLogout />} />

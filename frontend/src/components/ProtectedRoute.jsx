@@ -4,9 +4,9 @@ import api from "../api";
 import { REFRESH_TOKEN, ACCESS_TOKEN } from "../constants";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Register from "../pages/Register";
 
 function ProtectedRoute({ children }) {
-
     
     const [isAuthorized, setIsAuthorized] = useState(null);
 
@@ -48,6 +48,7 @@ function ProtectedRoute({ children }) {
             setIsAuthorized(true);
         }
     };
+
 
     if (isAuthorized === null) {
         return <div>Loading...</div>;
