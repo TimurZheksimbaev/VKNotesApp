@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "../styles/Notes.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEdit, faTrash, faSave } from '@fortawesome/free-solid-svg-icons';
 import api from "../api";
 
 function Notes() {
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState("");
   const [newTitle, setNewTitle] = useState("");
-  //   const [newDate, setNewDate] = useState('');
+  
   const [searchTerm, setSearchTerm] = useState("");
   const [editMode, setEditMode] = useState(null);
   const [editedContent, setEditedContent] = useState("");
