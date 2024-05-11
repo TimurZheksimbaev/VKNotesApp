@@ -13,7 +13,7 @@
 
 ## 2. Frontend
 - ### Frontend written in React using Vite development tool
-- ### Has three main routes, `/register`, `/login` and `/`.
+- ### Has three main routes, `/register`, `/login`, `/login` and `/`.
 
 ### Link to website https://vknotesapp-frontend.onrender.com/
 ### Frontend and backend are both hosted on render.com using free subscription plan, so they work a bit slow, but it do not affect overall functionality of services.
