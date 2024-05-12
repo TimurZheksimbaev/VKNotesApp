@@ -2,7 +2,6 @@ import axios from "axios"
 import  { ACCESS_TOKEN } from "./constants"
 
 const apiURL = "https://vknotesapp.onrender.com"
-// const apiURL = "http://127.0.0.1:8000"
 
 const api = axios.create({
     baseURL: apiURL,

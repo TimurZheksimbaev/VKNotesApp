@@ -5,8 +5,6 @@ import Register from "./pages/Register"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
-import Welcome from "./pages/Welcome"
-import { useState, useEffect } from "react"
 
 function Logout() {
   localStorage.clear()
@@ -27,7 +25,7 @@ function App() {
           path="/"
           element={
             <ProtectedRoute>
-              <Home />
+                <Home />
             </ProtectedRoute>
           }
         />
